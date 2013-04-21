@@ -37,7 +37,8 @@ public class App {
             Holder<String> statusmessage = new Holder<>();
             Holder<ArrayOfLong> sendSimpleByApikeyResult = new Holder<>();
             port.sendSimpleByApikey(apikey, sender, message, receptor, unixdate, msgmode, status, statusmessage, sendSimpleByApikeyResult);
-            System.out.println(statusmessage.value);
+            System.err.println(statusmessage.value);
+            System.err.println(status.value);
         } catch (Exception ex) {
             ex.printStackTrace();
         }

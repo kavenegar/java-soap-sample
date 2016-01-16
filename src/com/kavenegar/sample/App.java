@@ -23,11 +23,11 @@ public class App {
 
     public static void SendSMS() {
         try {
-            String apikey = "4A7670424E64525A576C5A5673734E68346A6B5842513D3D";
-            String sender = "30006703323323";
+            String apikey = "YourApiKey";
+            String sender = "10006707323323";
             String message = "hello soap";
             ArrayOfString receptor = new ArrayOfString();
-            receptor.getString().add("09360462966");
+            receptor.getString().add("YourCellNumber");
             long unixdate = 0;
             int msgmode = 1;
             com.kavenegar.V1 service = new com.kavenegar.V1();
